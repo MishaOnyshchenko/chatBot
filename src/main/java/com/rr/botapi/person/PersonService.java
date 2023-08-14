@@ -14,7 +14,7 @@ public class PersonService {
     public Person createPerson(Person person) {
         log.info("[createPerson] person: {}", person);
         Person saved = personRepository.save(person);
-        log.info("[createPerson] saved: {}", person);
+        log.info("[createPerson] saved: {}", saved);
         return saved;
     }
 
